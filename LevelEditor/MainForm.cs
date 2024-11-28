@@ -132,7 +132,8 @@ namespace LevelEditor
                 currentMap.render(e.Graphics);
 
                 // If grid drawing is enabled, draw a black wireframe grid.
-                if (showGrid)
+                // Do not draw grid if collision mode is enabled
+                if (showGrid && !(drawMode == DrawMode.Collision))
                 {
                     int width = currentMap.getWidth();
                     int height = currentMap.getHeight();
@@ -333,7 +334,7 @@ namespace LevelEditor
                 return;
 
             // Error check incorrect format
-            if (!fileName.Contains(".png") || !fileName.Contains(".PNG"))
+            if (!fileName.Contains(".png") && !fileName.Contains(".PNG"))
             {
                 MessageBox.Show(ERR_MAPS_MUST_BE_SAVED_AS_PNG, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
