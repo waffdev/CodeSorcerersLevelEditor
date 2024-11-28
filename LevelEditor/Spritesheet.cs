@@ -7,14 +7,27 @@ using System.Drawing;
 
 namespace LevelEditor
 {
+    /// <summary>
+    /// Spritesheet
+    /// Helper class for dividing texture atlases
+    /// </summary>
     class Spritesheet
     {
+        // Dimensions
         private int columns;
         private int rows;
         private int cellSize;
 
+        // Image
         private Bitmap spritesheetImg;
 
+        /// <summary>
+        /// Spritesheet constructor
+        /// </summary>
+        /// <param name="columns">Number of columns in the sheet</param>
+        /// <param name="rows">Number of rows in the sheet</param>
+        /// <param name="cellSize">Size of each cell (tile size)</param>
+        /// <param name="spritesheetImg">The image instance</param>
         public Spritesheet(int columns, int rows, int cellSize, Bitmap spritesheetImg)
         {
             this.columns = columns;
@@ -23,6 +36,10 @@ namespace LevelEditor
             this.spritesheetImg = spritesheetImg;
         }
 
+        /// <summary>
+        /// Splice the sheet into a one-dimensional array
+        /// </summary>
+        /// <returns>Bitmap[] one-dimensional array of sprites</returns>
         public Bitmap[] splice()
         {
             Bitmap[] returnArray = new Bitmap[rows * columns];

@@ -65,11 +65,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DrawMode.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ImportTileSetDialog.cs">
       <SubType>Form</SubType>
@@ -85,13 +85,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RawBitmap.cs" />
-    <Compile Include="RawColor.cs" />
     <Compile Include="Spritesheet.cs" />
     <Compile Include="TileMap.cs" />
     <Compile Include="TileSet.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ImportTileSetDialog.resx">
       <DependentUpon>ImportTileSetDialog.cs</DependentUpon>
@@ -133,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="3298591_draw_illustrations_illustrator_paint_icon.ico" />
+    <None Include="Resources\8541731_car_crash_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

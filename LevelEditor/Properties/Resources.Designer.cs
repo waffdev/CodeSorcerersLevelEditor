@@ -83,6 +83,16 @@ namespace LevelEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _8541731_car_crash_icon {
+            get {
+                object obj = ResourceManager.GetObject("8541731_car_crash_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _9057100_erase_icon {
             get {
                 object obj = ResourceManager.GetObject("9057100_erase_icon", resourceCulture);

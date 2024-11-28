@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace LevelEditor
 {
-    enum DrawMode
+    public enum DrawMode
     {
         Draw,
-        Erase
+        Erase,
+        Collision
     }
 }
